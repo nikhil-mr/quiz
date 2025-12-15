@@ -192,13 +192,13 @@ export default function Home() {
           }`}
         >
           <div className="relative w-full h-full">
-            <h2 className="absolute scale-45 text-yellow-400 font-pixelify font-bold text-shadow-custom top-[20px] left-[380px]">
+            <h2 className="absolute scale-705 text-yellow-400 font-pixelify font-bold text-shadow-custom top-[20px] left-[400px]">
               Question {question.id}
             </h2>
-            <p className="absolute scale-25 font-pixelify text-black text-shadow-white top-[150px] left-[200px] w-[600px]">
+            <p className="absolute scale-275 font-pixelify text-black text-shadow-white top-[150px] left-[170px] w-[600px]">
               {question.text}
             </p>
-            <div className="absolute scale-25 font-pixelify text-black text-shadow-white top-[250px] left-[200px] space-y-4">
+            <div className="absolute scale-225 font-pixelify text-black text-shadow-white top-[250px] left-[200px] flex gap-x-6">
               {question.options.map((option) => (
                 <label
                   key={option.value}
@@ -219,13 +219,13 @@ export default function Home() {
             
             {/* Back Button */}
             {question.id > 1 && (
-              <div className="absolute -left-[280px] bottom-0">
+              <div className="absolute -left-[-100px] bottom-20">
                 <Image
                   src="/back.png"
                   alt="Back"
                   width={100}
                   height={100}
-                  className="scale-100 hover:scale-120 transition-transform duration-300 cursor-pointer"
+                  className="scale-200 hover:scale-220 transition-transform duration-300 cursor-pointer"
                   onClick={() => navigateTo(`question${question.id - 1}` as Screen)}
                 />
               </div>
@@ -233,26 +233,26 @@ export default function Home() {
             
             {/* Home Button for Question 1 */}
             {question.id === 1 && (
-              <div className="absolute -left-[280px] bottom-0">
+              <div className="absolute -left-[-100px] bottom-20">
                 <Image
                   src="/back.png"
                   alt="Home"
                   width={100}
                   height={100}
-                  className="scale-100 hover:scale-120 transition-transform duration-300 cursor-pointer"
+                  className="scale-200 hover:scale-220 transition-transform duration-300 cursor-pointer"
                   onClick={() => navigateTo("frontpage")}
                 />
               </div>
             )}
             
             {/* Next/Finish Button */}
-            <div className="absolute left-[580px] bottom-0">
+            <div className="absolute left-[680px] bottom-21">
               <Image
                 src={question.id === 5 ? "/finish.png" : "/next.png"}
                 alt={question.id === 5 ? "Finish" : "Next"}
                 width={100}
                 height={100}
-                className="scale-100 hover:scale-120 transition-transform duration-300 cursor-pointer"
+                className="scale-200 hover:scale-220 transition-transform duration-300 cursor-pointer"
                 onClick={() => 
                   question.id === 5 
                     ? navigateTo("results") 
