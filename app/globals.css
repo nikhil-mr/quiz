@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme{
+  --font-pixelify: "Pixelify Sans", sans-serif;
+  
+  --animate-scale-30: {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.3);
+    }
+  };
+  
+  --animate-scale-35: {
+    0% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1.35);
+    }
+  };
+  
+  --animate-scale-45: {
+    0% {
+      transform: scale(1.45);
+    }
+    100% {
+      transform: scale(1.45);
+    }
+  };
+  
+  --animate-scale-50: {
+    0% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  };
+  
+  --animate-scale-60: {
+    0% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1.6);
+    }
+  };
+  
+  --animate-scale-25: {
+    0% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1.25);
+    }
+  };
+}
+
+@layer utilities {
+  .scale-30 {
+    scale: 1.3;
+  }
+  
+  .scale-35 {
+    scale: 1.35;
+  }
+  
+  .scale-45 {
+    scale: 1.45;
+  }
+  
+  .scale-25 {
+    scale: 1.25;
+  }
+  
+  .scale-20 {
+    scale: 1.2;
+  }
+  
+  .scale-50 {
+    scale: 1.5;
+  }
+  
+  .scale-40 {
+    scale: 1.4;
+  }
+  
+  .scale-60 {
+    scale: 1.6;
+  }
+  
+  .text-shadow-custom {
+    text-shadow: 3px 2px 3px black;
+  }
+  
+  .text-shadow-white {
+    text-shadow: 3px 2px 3px white;
+  }
+  
+  .transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 1000ms;
+  }
+}
