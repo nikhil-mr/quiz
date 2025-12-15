@@ -276,15 +276,7 @@ export default function Home() {
           <p className="text-[45rem] text-[#FED200] relative -bottom-[-200px]">
             {score}
           </p>
-          {/* <div className="absolute scale-10 -left-[3300px] transform -translate-y-[1000px]">
-          <Image
-            src="/background 1.png"
-            alt="Background"
-            width={1920}
-            height={2080}
-            className="object-contain"
-          />
-        </div> */}
+          
         </div>
         
         <div className="absolute scale-100 -left-[0px] transform -translate-y-[-500px] z-[1]">
