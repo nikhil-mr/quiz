@@ -167,10 +167,10 @@ export default function Home() {
           <h1 className="text-[10rem] text-yellow-400 font-pixelify font-bold text-shadow-custom">
             Quiz
           </h1>
-          <h1 className="text-[10rem] text-yellow-400 font-pixelify font-bold text-shadow-custom -mt-[130px]">
+          <h1 className="text-[10rem] text-yellow-400 font-pixelify font-bold text-shadow-custom -mt-[50px]">
             Competition
           </h1>
-          <div className="relative -bottom-[200px] left-[480px] w-fit">
+          <div className="relative -bottom-[100px] left-[630px] w-fit">
             <Image
               src="/start.png"
               alt="Start Quiz"
@@ -295,12 +295,12 @@ export default function Home() {
 
 function getCloudPosition(num: number): string {
   const positions: Record<number, string> = {
-    1: "top-[100px] left-[-180px]",
-    2: "top-[90px] left-[230px]",
-    3: "top-[90px] left-[530px]",
-    4: "top-[300px] left-[-230px]",
-    5: "top-[300px] left-[730px]",
-    6: "top-[180px] left-[730px]",
+    1: "top-[100px] left-[40px]",
+    2: "top-[90px] left-[430px]",
+    3: "top-[90px] left-[1030px]",
+    4: "top-[400px] left-[170px]",
+    5: "top-[500px] left-[730px]",
+    6: "top-[300px] left-[1100px]",
   };
   return positions[num] || "";
 }
